@@ -23,6 +23,7 @@ namespace DataStructures
     public class Arrays
     {
         char[] chars = new char[] { };
+
         public void Reverse(string word)
         {
             chars = word.ToCharArray();
@@ -64,6 +65,51 @@ namespace DataStructures
             {
                 Console.WriteLine(item);
             }
+        }
+
+        public string[] Append(string[] array, string item)
+        {
+            array = array.Append(item).ToArray();
+            return array;
+        }
+
+        public string[] Prepend(string[] array, string item)
+        {
+            array = array.Prepend(item).ToArray();
+            return array;
+        }
+
+        public string[] InsertByCopyToNewArray(string[] array, string item, int pos)
+        {
+            string[] newarray = new string[array.Length+1];
+
+            for (int i = 0; i < array.Length+1; i++)
+            {
+                if (i < pos - 1)
+                {
+                    newarray[i] = array[i];
+                }
+                else if (i == pos - 1)
+                {
+                    newarray[i] = item;
+                }
+                else
+                {
+                    newarray[i] = array[i-1];
+                }
+            }
+            return newarray;
+        }
+
+        public string[] InsertByShifting(string[] array, string item, int pos)
+        {
+            for (int i = array.Length-1; i>= pos; i--)
+            {
+                array[i] = array[i - 1];
+            }
+            array[pos - 1] = item;
+            return array;
+            //remember to keep the string[] array size bigger than the actual element size as insert does not increase array size
         }
     }
 }
