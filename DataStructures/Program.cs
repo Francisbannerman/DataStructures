@@ -34,6 +34,30 @@ namespace DataStructures
             Console.WriteLine("\n"+arr1.Length);
 
             Console.ReadKey();
+
+            //Console.WriteLine("Hello Data Structures");
+            //Console.WriteLine();
+            //string item1 = "sicnarf";
+            //string[] item2 = new string[] { "s", "i", "c", "n", "a", "r", "c", "f" };
+
+            //int[] intItem1 = { 1, 5, 8, 10, 12 };
+            //int[] intItem2 = { 4, 7, 9, 11, 15 };
+
+
+            //Arrays arrays = new Arrays();
+            ////arrays.Reverse(item1);
+            ////arrays.ReverseArray(item2);
+            ////arrays.Merge(intItem1, intItem2);
+            ////var results = arrays.DeleteByIndex(item2, 2);
+            ////var results = arrays.DeleteByItem(item2, "c");
+            //var results = arrays.DeleteAllOfItem(item2, "c");
+
+            //foreach (string item in results)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Console.ReadKey();
         }
     }
 }

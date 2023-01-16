@@ -38,6 +38,19 @@ namespace DataStructures
             }
         }
 
+        public void ReverseArray(string[] input)
+        {
+            if (input.Length < 2 || input.GetType() != typeof(string[]))
+            {
+                Console.WriteLine("Masa why. This ain't a string array.");
+            }
+            for (int i = input.Length - 1; i >= 0; i--)
+            {
+                string reversedInput = input[i];
+                Console.WriteLine(reversedInput);
+            }
+        }
+
         public void Merge(int[] arr1, int[] arr2)
         {
             int[] merged = new int[arr1.Length + arr2.Length];
@@ -110,6 +123,42 @@ namespace DataStructures
             array[pos - 1] = item;
             return array;
             //remember to keep the string[] array size bigger than the actual element size as insert does not increase array size
+        }
+
+        public string[] DeleteByIndex(string[] array, int pos)
+        {
+            //convert the array to a list
+            var arrayList = array.ToList();
+            //use the 'removeAt' function of lists to remove at said position
+            arrayList.RemoveAt(pos);
+            //convert list back to an array
+            array = arrayList.ToArray();
+            //return original array without the item in the index
+            return array;
+        }
+
+        public string[] DeleteByItem(string[] array, string item)
+        {
+            //convert the array to a list
+            var arrayList = array.ToList();
+            //use the 'remove' function of lists to remove the first instance of the item
+            arrayList.Remove(item);
+            //convert list back to an array
+            array = arrayList.ToArray();
+            //return original array without the item in it
+            return array;
+        }
+
+        public string[] DeleteAllOfItem(string[] array, string item)
+        {
+            //convert the array to a list
+            var arrayList = array.ToList();
+            //use the 'remove' function of lists to remove the first instance of the item
+            arrayList.RemoveAll(x => x == item);
+            //convert list back to an array
+            array = arrayList.ToArray();
+            //return original array without the item in it
+            return array;
         }
     }
 }
