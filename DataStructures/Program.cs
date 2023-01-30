@@ -58,6 +58,22 @@ namespace DataStructures
             //}
 
             //Console.ReadKey();
+
+            //Console.WriteLine("Linked Lists \n");
+
+            //LinkedList lList = new LinkedList(2);
+            //lList.Append(5);
+            //lList.Append(6);
+            //lList.Append(7);
+            //lList.Append(8);
+            //lList.Insert(5, 9);
+            //lList.Insert(0, 10);
+
+            //lList.Print();
+            //Console.WriteLine();
+            //Console.WriteLine(lList.Length);
+
+            //Console.Read();
         }
     }
 }
