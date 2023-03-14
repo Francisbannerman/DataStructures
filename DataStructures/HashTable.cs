@@ -48,7 +48,7 @@ namespace DataStructures
             {
                 userInfoHash.Remove(0);
             }
-            //Setting & Getting a value in hashteble. First u need to confirm if the key exist to confirm the value
+            //Setting & Getting a value in hashtable. First u need to confirm if the key exist to confirm the value
             if (userInfoHash.ContainsKey(1))
             {
                 userInfoHash[1] = "replacementName";
