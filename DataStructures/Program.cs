@@ -16,6 +16,19 @@ namespace DataStructures
             Console.WriteLine();
             Console.WriteLine("Hello");
             Console.ReadKey();
+            
+            // //for Graphs
+            // Graph graph = new Graph();
+            // graph.AddVertex(0);
+            // graph.AddVertex(1);
+            // graph.AddVertex(2);
+            // graph.AddVertex(3);
+            // graph.AddVertex(4);
+            // graph.AddEdge(0, 1);
+            // graph.AddEdge(1, 2);
+            // graph.AddEdge(1, 3);
+            // graph.AddEdge(4, 3);
+            // graph.Print();
 
             // //ARRAYS...
             // Console.WriteLine("Hello Data Structures\n");
